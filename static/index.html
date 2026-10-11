@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bhumi Vikas Sahayak · Bhopal Municipal Corporation</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏢</text></svg>">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -19,6 +20,7 @@
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
   <style type="text/tailwindcss">
     /* Markdown answer body (tables rebuilt by the model, see SYSTEM prompt in app.py) */
@@ -130,6 +132,47 @@
       </div>
     </section>
   </main>
+
+  <!-- Send to Citizen (WhatsApp) modal -->
+  <div id="waModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 p-4 backdrop-blur-sm">
+    <form id="waForm" class="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl" novalidate>
+      <div class="flex items-center gap-3 bg-gov-900 px-5 py-4 text-white">
+        <div class="grid h-10 w-10 place-items-center rounded-full bg-green-500 text-xl">📱</div>
+        <div>
+          <h3 class="font-semibold leading-tight">Send to Citizen</h3>
+          <p class="text-xs text-gov-100">PDF report + WhatsApp message</p>
+        </div>
+        <button type="button" id="waClose" class="ml-auto text-2xl leading-none text-gov-100 hover:text-white" aria-label="Close">&times;</button>
+      </div>
+      <div class="space-y-4 px-5 py-5">
+        <p id="waQuestion" class="line-clamp-2 rounded-lg bg-slate-50 px-3 py-2 text-xs text-slate-600 ring-1 ring-slate-200"></p>
+        <div>
+          <label for="waNumber" class="mb-1.5 block text-sm font-medium text-slate-700">Enter Citizen's WhatsApp Number (10 digits)</label>
+          <div class="flex overflow-hidden rounded-lg border border-slate-300 focus-within:border-green-600 focus-within:ring-2 focus-within:ring-green-100">
+            <span class="grid place-items-center border-r border-slate-300 bg-slate-50 px-3 text-sm font-medium text-slate-600">🇮🇳 +91</span>
+            <input id="waNumber" type="tel" inputmode="numeric" maxlength="10" autocomplete="off" placeholder="98XXXXXXXX"
+              class="flex-1 px-3 py-2.5 text-base tracking-widest focus:outline-none">
+          </div>
+          <p id="waError" class="mt-1.5 hidden text-xs font-medium text-red-600"></p>
+        </div>
+        <p class="text-xs text-slate-500">
+          <b>Send</b> opens WhatsApp Web with this number and the message ready, and downloads <b>BMC_Rule_Query.pdf</b>.
+          WhatsApp links cannot carry files, so drag the PDF into the chat (or use 📎 Attach → Document).
+        </p>
+        <div id="waShareBox" class="hidden rounded-lg border border-green-200 bg-green-50 p-3">
+          <p class="mb-2 text-xs text-green-900"><b>PDF attached automatically:</b> needs the WhatsApp app (WhatsApp Desktop on this PC, or a phone/tablet). Pick the citizen's chat in WhatsApp.</p>
+          <button type="button" id="waShare" class="w-full rounded-lg border-2 border-green-600 bg-white px-4 py-2 text-sm font-semibold text-green-700 hover:bg-green-100 disabled:cursor-wait disabled:opacity-50">
+            📎 Share PDF + message via WhatsApp app
+          </button>
+        </div>
+        <p id="waStatus" class="hidden rounded-lg bg-green-50 px-3 py-2 text-xs font-medium text-green-800"></p>
+      </div>
+      <div class="flex justify-end gap-2 border-t border-slate-200 bg-slate-50 px-5 py-3">
+        <button type="button" id="waCancel" class="rounded-lg px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-200">Cancel</button>
+        <button type="submit" id="waSend" class="rounded-lg bg-green-600 px-5 py-2 text-sm font-semibold text-white hover:bg-green-700 disabled:cursor-wait disabled:opacity-50">Send via WhatsApp Web</button>
+      </div>
+    </form>
+  </div>
 
   <style type="text/tailwindcss">
     #chips button { @apply shrink-0 whitespace-nowrap rounded-full border border-gov-100 bg-gov-50 px-3 py-1.5 text-xs font-medium text-gov-800 hover:bg-gov-100 hover:border-gov-600 disabled:opacity-50 disabled:cursor-wait transition; }

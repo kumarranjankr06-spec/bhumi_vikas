@@ -571,5 +571,341 @@
     ],
     "notes": "The question \"fees for extra floor\" was read as the fee for a building permission for an addition/alteration adding a floor; if you actually meant a compounding/regularisation charge for an already-built floor, that amount is fixed by the Municipal Corporation Act/Compounding Rules, not by these rules. This text is consolidated up to 6 March 2025; the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included — flag it if the plot is up to 500 sq m. FAR and other norms of the local Development Plan can override these rules (Rule 103; FAR footnote under Rule 61 Table 8: \"F.A.R and Density may be adopted as provided in the Development Plans of respective towns\"). This is not legal advice; it only points to the rule.",
     "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "mera 1 meter ka ploat hai": {
+    "status": "not_found",
+    "answer": "**आपका प्रश्न स्पष्ट नहीं है, और \"1 मीटर का प्लॉट\" जैसी कोई स्थिति म.प्र. भूमि विकास नियम, 2012 में नहीं दी गई है।**\n\nकृपया काउंटर पर निम्न जानकारी दें, तभी सही नियम बताया जा सकता है:\n\n| आवश्यक जानकारी | उदाहरण |\n|---|---|\n| प्लॉट का क्षेत्रफल (वर्ग मीटर में) | जैसे 100 वर्ग मीटर |\n| प्लॉट की चौड़ाई (frontage) व गहराई | जैसे 10 मी. × 15 मी. |\n| सामने की सड़क की चौड़ाई | जैसे 9.0 मी. |\n| प्रस्तावित उपयोग | आवासीय / व्यावसायिक / औद्योगिक आदि |\n| प्रस्तावित भवन की ऊँचाई / मंज़िलें | जैसे 2 मंज़िल |\n| नगर/क्षेत्र (विकास योजना लागू है या नहीं) | भोपाल – विकास योजना क्षेत्र |\n\nयदि आपका आशय यह है कि प्लॉट का क्षेत्रफल केवल 1 वर्ग मीटर है, तो इस आकार के भूखंड पर निर्माण/अनुज्ञा के संबंध में इन नियमों में कोई प्रावधान नहीं मिलता — यह उत्तर म.प्र. भूमि विकास नियम, 2012 में उपलब्ध नहीं है। सही आँकड़े मिलने पर न्यूनतम भूखंड आकार, खुली जगह (MOS), FAR व भवन अनुज्ञा शुल्क की गणना करके बताई जा सकती है।",
+    "clerk_summary": "प्रश्न अधूरा है — \"1 मीटर का प्लॉट\" का कोई प्रावधान नियमों में नहीं है।\nकृपया प्लॉट का क्षेत्रफल (वर्ग मीटर), सामने की सड़क की चौड़ाई और प्रस्तावित उपयोग बताइए।\nउसके बाद ही न्यूनतम खुली जगह, FAR और शुल्क बताया जा सकेगा।",
+    "citations": [],
+    "notes": "यह पाठ 6 मार्च 2025 तक संकलित है। यदि आपका भूखंड 500 वर्ग मीटर तक का है, तो ध्यान रहे कि नियम 2(5)(ग) में 28 अगस्त 2026 का संशोधन (500 वर्ग मीटर तक के भूखंडों से संबंधित) इस पाठ में शामिल नहीं है। साथ ही, नियम 103 के अनुसार संबंधित विकास योजना के मापदंड लागू होते हैं और नियम 61 की तालिका के फुटनोट अनुसार FAR/घनत्व विकास योजना के अनुसार अपनाया जा सकता है — अतः स्थानीय विकास योजना इन नियमों पर प्रभावी हो सकती है। यह विधिक परामर्श नहीं है; यह केवल संबंधित नियम की ओर संकेत करता है।",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "hii": {
+    "status": "not_found",
+    "answer": "Hello! 👋 I'm here to help you answer citizens' questions using **only** the Madhya Pradesh Bhumi Vikas Rules, 2012 (consolidated up to 6 March 2025).\n\nYou haven't asked a question yet, so there is nothing to look up in the rules. Please tell me what the citizen wants to know — for example:\n\n- **Open spaces / setbacks** – e.g. \"What front open space is needed for a house on a 9 m road?\" (Rule 56)\n- **FAR / ground coverage** – e.g. \"What FAR applies to a residential plot?\" (Rule 61, Rules 42 Tables 4 & 5)\n- **Fees** – e.g. \"What is the permission fee for a 250 sq m house?\" (Rule 21)\n- **Plot sizes, merger/division, parking, basements, lifts, fire safety**, etc.\n\nGive me the plot size, road width, use (residential/commercial/industrial) and building height where relevant, and I will point you to the exact rule and table row.",
+    "clerk_summary": "Namaste — please tell me the citizen's actual question (plot size, road width, use, height) and I will find the exact rule in the MP Bhumi Vikas Rules, 2012.",
+    "citations": [],
+    "notes": "No legal question was asked, so no rule has been cited. General caveats for later queries: this text is consolidated only up to 6 March 2025; the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included, so flag it for any question touching plots up to 500 sq m or Rule 2(5)(c). Also, the local Development Plan may override these rules (Rule 103; FAR footnote in Rule 61). This is not legal advice.",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "what are the rules for plots up to 500 sq m": {
+    "status": "found",
+    "answer": "The rules don't have one single \"plots up to 500 sq m\" rule – the 500 sq m figure appears in several separate places, and a small plot is also governed by the ordinary residential development-control rules. Here is the consolidated picture for a residential plot of **up to 500 sq m**.\n\n## A. Where \"500 sq m\" is expressly mentioned\n\n| Provision | What it says for plots up to 500 sq m |\n|---|---|\n| Rule 22(A)(2)(1)(b) – merger | Contiguous residential plots may be merged, but the **merged plot must not exceed 500 sq m** (EWS/LIG plots cannot be merged at all) |\n| Rule 26(9)(A)(b) – Architect | An Architect may submit **structural details and calculations for residential buildings on a plot up to 500 sq m and up to three storeys / 11 m** |\n| Rule 26(9)(B)(i) – Structural Engineer | May submit **all plans and information for residential buildings on plots up to 500 sq m and up to three storeys / 11 m** |\n| Rule 26(9)(C)(ii) – Engineer | May submit **structural details and calculation for all buildings on plots up to 500 sq m and height up to four storeys (15 m)** |\n| Rule 61, Note (3) – servant quarter | Plot **200–500 sq m → one servant quarter**; more than 500 sq m → two. Size not to exceed 25 sq m; not counted in built-up/covered area |\n\n## B. Simplified permission routes for smaller plots\n\n| Plot size | Facility |\n|---|---|\n| Up to 186 sq m (residential) | Rule 12-A **instant / deemed approval** on an individual plot (not for colonisers), on the Appendix A-2(2) form + affidavit + Rule 21 fee |\n| Up to 300 sq m | Rule 6(3): a registered **Architect/Structural Engineer may issue the building permission** (with Director's approval); Rule 21(4): **standard approved building plans** are kept by the Authority and the fee receipt is treated as the permission |\n\n## C. Ordinary development control that applies to such a plot\n\n- **Plot type / frontage (Rule 53(1))**: Row type 50–225 sq m (frontage 4.5–12 m); Semi-detached 125–225 sq m (8–12 m); Detached above 225 sq m (above 12 m).\n- **Front open space (Rule 56(1)(a), height up to 12.5 m)**:\n\n| Width of street facing the plot | Minimum front open space |\n|---|---|\n| Up to 9.0 m | **3.0 m** |\n| More than 9.0 m and up to 12 m | 3.6 m |\n| More than 12.0 m and up to 18 m | 4.5 m |\n| Above 18 m | 6.0 m |\n\n- **Rear open space (Rule 56(2)(a))**:\n\n| Plot area | Minimum rear open space |\n|---|---|\n| Up to 40 sq m | Nil |\n| Above 40 and up to 150 sq m | 1.50 m |\n| Above 150 and up to 225 sq m | 2.50 m |\n| Above 225 sq m | **3.00 m** |\n\n- **Side open space (Rule 56(3))**: detached – 3 m on both sides (one side may be reduced to 1.5 m for a building up to 7 m height on a frontage less than 12 m); semi-detached – 3 m on one side (2.5 m if height up to 10 m and frontage up to 10 m); row type – nil.\n- **FAR (Rule 61, Table 8)**: Residential **1.25** (plus Premium FAR up to 25% of Base FAR under Note 7, at rates fixed by the State Government).\n- **Covered parking (Rule 61, Note 4)**: allowed within permissible ground coverage on plots of 200 sq m or more, not counted in FAR/height.\n- **Rainwater harvesting (Rule 81(4))**: compulsory on all buildings with **plot size more than 140 sq m**.\n- **Plantation (Rule 67)**: plot of 100 sq m or more – one tree per 100 sq m before occupancy certificate.\n- **Fees (Rule 21(3)(b))**: residential building fee by built-up area slab, e.g. 0–75 sq m → Rs. 750; 126–200 sq m → Rs. 2,000; 301–400 sq m → Rs. 4,000. Application fee Rs. 1.00 per sq m of proposed built-up area (Rule 21(2)(ii)).\n\nIf you tell me the exact plot area, road width and intended use, I can pin the figures down for that specific case.",
+    "clerk_summary": "\"Plots up to 500 sq m\" is not one rule: 500 sq m is the ceiling for merged residential plots (R.22), the limit of Architect/Structural Engineer competence for residential plans (R.26(9)), and the servant-quarter slab (R.61 Note 3). Otherwise normal rules apply – FAR 1.25, front MOS 3.0 m on roads up to 9 m, rear MOS by plot area. Up to 186 sq m you get instant/deemed approval (R.12-A); up to 300 sq m an authorised Architect/Engineer or a standard plan can be used.",
+    "citations": [
+      {
+        "rule": "Rule 22(A)(2)(1)(b)",
+        "page": 39,
+        "quote": "only contiguous plots shall be merged and the size of such merged plots shall not exceed 500 sq.m.;",
+        "verified": true
+      },
+      {
+        "rule": "Rule 26(9)(A)(b)",
+        "page": 45,
+        "quote": "structural details and calculations for residential buildings on plot up to 500 square meters and up to three storey's or 11 meters in height;",
+        "verified": true
+      },
+      {
+        "rule": "Rule 26(9)(B)(i)",
+        "page": 45,
+        "quote": "all plans and information connected with permission for residential\n               buildings on plots up to 500 Sq. m. and up to three stories or 11 m. in\n               height.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 26(9)(C)(ii)",
+        "page": 45,
+        "quote": "structural details and calculation for all buildings on plots up to 500 sq.\n               m. and height upto four Stories (15 m);",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61, Note (3)",
+        "page": 84,
+        "quote": "On plot admeasuring 200 to 500 sq. meters one servant quarter and on plot admeasuring more than 500 sq. meters two servant quarters may be permitted, The size of a servant quarter shall not exceed 25 sq. m. and the area of the servant quarter shall not be counted in the built up area or the covered area.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 12-A(3)",
+        "page": 21,
+        "quote": "Only individual plot holder shall be eligible for application of\n                instant/deemed approval. Such permission cannot be issued to the\n                colonizers who intend to sell the plot/flats/building.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 6(3)",
+        "page": 16,
+        "quote": "Architect/Structural Engineer duly registered by the Authority having\njurisdiction may be authorised to issue the building permission on the plots measuring\nup to 300 sq. meter after getting approval of the Director, town and country planning:",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(4)",
+        "page": 38,
+        "quote": "Each authority/authorised Architect/Structural\nEngineer shall keep a set of approved standard building plan for plot sizes up to 300\nsquare meters.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 53(1)(i)",
+        "page": 70,
+        "quote": "Each plot shall have a minimum size and frontage corresponding to the type\n           of development as given below:-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(1)(a)",
+        "page": 77,
+        "quote": "Every Residential Building having height up to 12.5 meters, facing street\n              shall have a front open space mentioned below and such open space shall\n              form an integral part of the site :-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(2)(a)",
+        "page": 78,
+        "quote": "Every Residential Building, having height up to 12.5 meters, shall have\n              a Rear Open Space, as below:-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61",
+        "page": 83,
+        "quote": "The Floor Area Ratio (FAR) for different use group shall be as mentioned in Table 8 :-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61 (footnote to Table 8)",
+        "page": 83,
+        "quote": "F.A.R and Density may be adopted as provided in the Development Plans of\n          respective towns.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 81(4)",
+        "page": 94,
+        "quote": "Rain/Roof water harvesting method shall have to be provided on all type of\nbuildings having plot size more than 140 Square meter as per the options mentioned in\nAPPENDIX- H-1, H-2 and H-3.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 67",
+        "page": 87,
+        "quote": "A plot having area of 100 square meters or more shall be planted\nwith trees after the completion of construction of building.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 103",
+        "page": 107,
+        "quote": "Provided that if the norms and regulation as provided in the development plan are\ndifferent or contrary to these rules, the Director shall examine and send his proposal to\nthe Government.",
+        "verified": true
+      }
+    ],
+    "notes": "(1) The question is very broad; the answer gathers every place where plots up to 500 sq m are relevant. Tell me the exact plot size, road width and use for a precise answer. (2) This text is consolidated only up to 6 March 2025 – the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included here, so please verify the current position of Rule 2(5)(c) before deciding any case involving plots up to 500 sq m. (3) Under Rule 103 the norms of the relevant Development Plan take precedence, and the footnote to Rule 61 Table 8 allows FAR/density as per the town's Development Plan – check the Bhopal Development Plan. (4) Rule 15 and Rule 16(6)(2) use 500 square metres of BUILT-UP area (not plot area) as the trigger for extra certificates/fire details – do not confuse the two. (5) This is not legal advice; it only points to the rule.",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "agar contractor cement me rati mila de toh kya penalty hai": {
+    "status": "not_found",
+    "answer": "**यह जानकारी म.प्र. भूमि विकास नियम, 2012 में उपलब्ध नहीं है।**\n\nआपका प्रश्न निर्माण सामग्री में मिलावट (cement में रेती/बालू मिलाना) करने वाले ठेकेदार पर लगने वाले **दंड/penalty** के बारे में है। इन नियमों में ऐसी किसी मिलावट के लिए कोई जुर्माना, सज़ा या कार्यवाही निर्धारित नहीं की गई है।\n\nये नियम केवल विकास अनुमति, भवन अनुमति, खुली जगह, FAR, पार्किंग आदि से संबंधित हैं। सामग्री की गुणवत्ता के बारे में सामान्य अपेक्षा तो है, पर उल्लंघन पर दंड का प्रावधान इन नियमों में नहीं दिया गया — अतः इस प्रश्न का उत्तर इन नियमों से नहीं दिया जा सकता।\n\n**आगे क्या करें:** गुणवत्ता/मिलावट की शिकायत ठेके (contract) की शर्तों, संबंधित नगर पालिक निगम अधिनियम/उपभोक्ता कानून या पुलिस में धोखाधड़ी के प्रावधानों के अंतर्गत देखी जाएगी — वह इस काउंटर के दायरे से बाहर है।",
+    "clerk_summary": "भूमि विकास नियम 2012 में सीमेंट में मिलावट करने वाले ठेकेदार के लिए कोई penalty तय नहीं है।\nयह विषय इन नियमों में आता ही नहीं — ठेके की शर्तों/अन्य कानून के तहत देखें।",
+    "citations": [],
+    "notes": "यह पाठ 6 मार्च 2025 तक संकलित है। नियमों में सामग्री एवं कारीगरी की गुणवत्ता की सामान्य अपेक्षा का उल्लेख है, किंतु उल्लंघन पर दंड का कोई प्रावधान नहीं है, इसलिए कोई उद्धरण नहीं दिया गया। यह विधिक सलाह नहीं है।",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "parking rules for commercial": {
+    "status": "found",
+    "answer": "**Short answer:** The general parking norms are kept in **Appendix I-1 and I-2** (Rule 84), which are *not* part of the rule text supplied to this tool. However, the rules themselves fix parking for specific commercial buildings — **shopping malls / open malls (Rule 96)** and **multiplexes (Rule 95)** — plus the way parking area is converted into \"equivalent car spaces\".\n\n---\n\n### 1. General provision — Rule 84\n- Rule 84(1): parking on the plot and off the plot is to be as per **Appendix I-1 and I-2**.\n- Rule 84(2): a **standalone multi-level public parking** is permissible in residential, commercial, PSP, industrial, recreational, agriculture and transportation land use; **5% of its built-up area may be used for commercial activity**, with front MOS 12 m, all other sides 7.5 m, ground coverage max 80%.\n\n### 2. Shopping Mall / Open Mall — Rule 96 (applies only where the Development Plan is silent)\n\n| Town population | Shopping Mall | Open Mall |\n|---|---|---|\n| Up to 3 lakhs | 1 car space per 60 sq m built-up area | 1 car space per 60 sq m built-up area |\n| 3 to 5 lakhs | 1 car space per 55 sq m built-up area | 1 car space per 55 sq m built-up area |\n| Above 5 lakhs | **1 car space per 50 sq m built-up area** | **1 car space per 50 sq m built-up area** |\n\n*(Bhopal is above 5 lakhs → the 50 sq m row applies.)*\n\n**Rule 96(2) – equivalent car space calculation:**\n\n| Type of space | Divide by |\n|---|---|\n| Basement (sq m) | 35 sq m |\n| Over-ground covered parking (podium / stilt) (sq m) | 50 sq m |\n| Open spaces (sq m) | 25 sq m |\n\n### 3. Multiplex / Multiplex-cum-shopping — Rule 95 (again, only where the Development Plan is silent)\n\n| Town population | Multiplex | Multiplex-cum-shopping |\n|---|---|---|\n| Up to 3 lakhs | 1 car space per 55 sq m built-up area | 1 car space per 55 sq m built-up area |\n| 3.0 to 7.5 lakhs | 1 car space per 50 sq m built-up area | 1 car space per 50 sq m built-up area |\n| Above 7.5 lakhs | 1 car space per 45 sq m built-up area | 1 car space per 45 sq m built-up area |\n\nConversion of an old cinema to a multiplex: if the number of seats does not increase, **no additional parking**; if seats increase, extra parking **@ one car space for every 12 seats** [Rule 95 Note (c)].\n\n**Rule 95(5) – equivalent car space calculation:** basement ÷ 35 sq m; over-ground covered parking ÷ 30 sq m; open spaces ÷ 25 sq m; **no parking is allowed in the marginal open spaces (MOS)**.\n\n*Worked example:* a mall in Bhopal (above 5 lakhs) with 6,000 sq m built-up area → 6,000 ÷ 50 = **120 equivalent car spaces** required.\n\n### 4. Related points for commercial buildings\n- **Open spaces (Rule 57(d))** for business/mercantile/storage buildings: 6 m front, 4.5 m on the other three sides. The reported High Court comment stresses that 4.5 m off-street parking and 4.5 m open space are **two separate requirements and cannot be clubbed**.\n- **Basement** may be used for parking spaces [Rule 76(3)(d)].\n- **Parking floors**: on plots of **not less than 1000 sq m**, covered parking with clear height not more than 2.4 m is allowed on any floor and is **not counted in FAR** (Rule 63); podium parking similarly excluded (Rule 62).\n- Rule 61 Note (4): covered parking (clear height 2.4 m) within permissible ground coverage on plots of **200 sq m or more** is not counted in FAR or height.",
+    "clerk_summary": "General parking norms are in Appendix I-1/I-2 under Rule 84 (not in the text I hold). For malls (Rule 96) in a town above 5 lakhs: 1 car space per 50 sq m built-up area; for multiplexes above 7.5 lakhs: 1 per 45 sq m. Basement ÷35, podium/stilt ÷50 (mall) or ÷30 (multiplex), open space ÷25 gives equivalent car spaces; no parking in marginal open spaces. Development Plan norms come first.",
+    "citations": [
+      {
+        "rule": "Rule 84(1)",
+        "page": 97,
+        "quote": "84. Parking Space.- (1) The norms for providing parking on the plot and in areas other than the plot shall be in accordance with the norms given in the Appendix 1-1 and 1-2, respectively.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 84(2)",
+        "page": 97,
+        "quote": "Standalone multi-level public parking may be permissible in residential, commercial, PSP, Industrial, recreational, agriculture and transportation land use classification. 5% of the built up area of the parking structure may be used for commercial activity.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 96(1) – Table, Minimum parking row",
+        "page": 105,
+        "quote": "Population Above 5 lakhs                 One car space     One car space\n                                                                 for every 50      for every 50\n                                                                 sq. mtrs. built   sq. mtrs. built\n                                                                 up area           up area",
+        "verified": true
+      },
+      {
+        "rule": "Rule 96(2)",
+        "page": 106,
+        "quote": "(ii) overground covered parking (podium / stilt) in sq.mtrs, divided by 50 sq.\n                  mtrs.;",
+        "verified": true
+      },
+      {
+        "rule": "Rule 95(4) – Table, Parking Area row",
+        "page": 103,
+        "quote": "Above 7.5          1 Car space        1 Car space As per note (c)\n                       lakhs              for every 45       for every 45 below.\n                                          Sq. m. built       Sq. m. built\n                                          up area            up area",
+        "verified": true
+      },
+      {
+        "rule": "Rule 95(5)",
+        "page": 104,
+        "quote": "(i) basement in sq. mtrs. divided by 35 sq. mtrs;",
+        "verified": true
+      },
+      {
+        "rule": "Rule 95(5)(iv)",
+        "page": 104,
+        "quote": "(iv) no parking shall be allowed in marginal open spaces.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 57(d)",
+        "page": 80,
+        "quote": "(d) Business, Mercantile and Storage Buildings - The open spaces shall not be\n         less than 6 meters in the front and 4.5 meters on other three sides, Where these\n         are situated in purely residential zone or residential with shops line zone, the\n         open spaces may be relaxed.",
+        "verified": true
+      },
+      {
+        "rule": "Comment under Rule 58 (Satish Nayak)",
+        "page": 81,
+        "quote": "Leaving space of 4.5 meter as off-street\nparking and 4.5 meter as open space, these are two different requirements which are to\nbe fulfilled and cannot be clubbed together.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 63",
+        "page": 85,
+        "quote": "63. Parking Floors.- Where the plot size is not less than 1000 sq. mtrs. covered\nparking with a clear height of not more than 2.4 meters may be permitted on any floor\nof the building according to the requirement of the project. Such parking shall not be\nincluded in the calculation of the FAR.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 76(3)(d)",
+        "page": 90,
+        "quote": "(d) parking spaces;",
+        "verified": true
+      }
+    ],
+    "notes": "(1) The detailed, use-wise parking standards are in Appendix I-1 and I-2 referred to in Rule 84; those Appendices are NOT part of the text available to this tool, so the exact car/scooter/cycle space requirement for a general commercial building cannot be quoted here — please consult the Appendix in the gazette copy. (2) Rules 95 and 96 expressly say that permissibility and norms for multiplexes and malls 'shall be as mentioned in the Development Plan'; the tables above apply only where the Development Plan is silent or not in force. Rule 103 also makes Development Plan norms take precedence (with a reference to Government for conflicts), and the FAR footnote in Rule 61 allows FAR/density as per the Development Plan. (3) This text is consolidated up to 6 March 2025; the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included — flag it if the case involves a plot up to 500 sq m. (4) The question was general; if you tell me the exact building type, plot size, road width and built-up area, a precise figure can be worked out. This is not legal advice; it only points to the rule.",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "setback for 200 sqm plot": {
+    "status": "found",
+    "answer": "## Setbacks (marginal open spaces) for a 200 sq m residential plot, building height up to 12.5 m — Rule 56\n\n**1. Front open space — depends on the width of the street facing the plot (Rule 56(1)(a)):**\n\n| Width of street facing the plot | Minimum front open space |\n|---|---|\n| Up to 9.0 m | **3.0 m** |\n| More than 9.0 m and up to 12 m | 3.6 m |\n| More than 12.0 m and up to 18 m | 4.5 m |\n| Above 18 m | 6.0 m |\n\nSpecial case: in existing developed areas where the street is **less than 6.0 m wide**, the building line must be **6.0 m from the centre line of the street** (Rule 56(1)(b)).\n\n**2. Rear open space — depends on plot area (Rule 56(2)(a)):**\n\n| Plot area (sq m) | Minimum rear open space |\n|---|---|\n| Up to 40.00 | Nil |\n| Above 40.00 and up to 150.00 | 1.50 m |\n| Above 150 and up to 225.00 | **2.50 m** |\n| Above 225.00 | 3.00 m |\n\n200 sq m falls in the band \"Above 150 and up to 225.00\" → **rear MOS 2.50 m**.\n\n**3. Side open space — depends on the type of building (Rule 56(3)):**\n\n| Type of building | Side open space |\n|---|---|\n| Detached | 3.0 m on **both** sides (may be reduced to 1.5 m on one side if height up to 7 m and frontage less than 12 m) |\n| Semi-detached | 3.0 m on **one** side (may be reduced to 2.5 m if height up to 10 m and frontage up to 10 m) |\n| Row type | **Nil** |\n\nUnder Rule 53(1)(i), a 200 sq m plot is normally a **semi-detached** (125–225 sq m, frontage 8–12 m) or **row-type** (50–225 sq m, frontage 4.5–12 m) plot; \"detached\" is prescribed for plots above 225 sq m.\n\n### Typical answer at the counter (semi-detached house, 9 m road, height ≤ 12.5 m)\n- Front: **3.0 m**\n- Rear: **2.50 m**\n- Side: **3.0 m on one side** (2.5 m if height ≤ 10 m and frontage ≤ 10 m)\n\nIf the building exceeds 12.5 m in height, Rule 56(5) sends you to Tables 4 and 5 of Rule 42 instead (those tables also require a minimum plot of 1000 sq m and above, so they do not fit a 200 sq m plot).",
+    "clerk_summary": "For a 200 sq m residential plot (height up to 12.5 m): rear setback 2.50 m (Rule 56(2)); front setback depends on road width — 3.0 m for roads up to 9 m, 3.6 m up to 12 m, 4.5 m up to 18 m, 6.0 m above 18 m. Side: 3.0 m one side if semi-detached, nil if row-type, 3.0 m both sides if detached.",
+    "citations": [
+      {
+        "rule": "Rule 56(1)(a)",
+        "page": 77,
+        "quote": "Every Residential Building having height up to 12.5 meters, facing street shall have a front open space mentioned below and such open space shall form an integral part of the site :-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(1)(a) Table",
+        "page": 77,
+        "quote": "Up to 9.0 meters",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(1)(b)",
+        "page": 77,
+        "quote": "In existing developed areas with streets less than 6.0 meters in width, the distances of the building (building line) shall be at 6.0 meters from the center line of the street.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(2)(a)",
+        "page": 78,
+        "quote": "Every Residential Building, having height up to 12.5 meters, shall have a Rear Open Space, as below:-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(2)(a) Table",
+        "page": 78,
+        "quote": "Above 150 and up to 225.00",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(3)",
+        "page": 78,
+        "quote": "For detached buildings there shall be minimum side open spaces of 3\n                meters on both the sides :",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(3)(ii)",
+        "page": 78,
+        "quote": "For semi-detached building there shall be a minimum side open space of\n               3.0 meters on one side.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(3)(iii)",
+        "page": 78,
+        "quote": "For row-type buildings, no side open space is required.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 53(1)(i)",
+        "page": 70,
+        "quote": "Each plot shall have a minimum size and frontage corresponding to the type\n           of development as given below:-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(5)",
+        "page": 78,
+        "quote": "Open space for building of more than 12.5 meters height - For building of\n         height above 12.5 meters the open spaces around building shall be as given in\n         Table 4 and 5 of Rule 42.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 46",
+        "page": 62,
+        "quote": "Subject to rule 56, building line shall be set back at least 3\nmeters from means of access.",
+        "verified": true
+      }
+    ],
+    "notes": "The question did not state the road width, the building height or whether the house is detached / semi-detached / row-type, so the full tables are given; please pick the row that matches the file. This text is consolidated only up to 6 March 2025 — the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included, and it may affect a 200 sq m plot, so verify the latest gazette. Rule 46 says the building line is set back at least 3 m from the means of access, but it is expressly \"subject to rule 56\", so Rule 56 governs the marginal open spaces. Under Rule 103 the norms of the applicable Development Plan take precedence over these rules (the Director/Government decides in case of difference). This is a pointer to the rule, not legal advice.",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "what is the far for residential": {
+    "status": "conflict",
+    "answer": "## Short answer\nUnder **Rule 61, Table 8**, the Floor Area Ratio for the **Residential** use group is **1.25**.\n\n### Rule 61 – Table 8 (FAR for different use groups)\n\n| S.No. | Use Group | FAR* | Category |\n|---|---|---|---|\n| 1 | Residential | **1.25** | – |\n| 2 | Commercial | 2.50 | City Centre |\n| 2 | Commercial | 2.00 | Sub-city centre |\n| 2 | Commercial | 1.75 | Community Center |\n| 2 | Commercial | 1.50 | Local Shopping Centre |\n| 2 | Commercial | 1.25 | Convenience Shopping Centre |\n| 3 | Public Semi-public | 1.00 | Administrative Areas / Education and Research / Health / Social / Cultural / Institutional |\n| 4 | Industrial | as per rule 48 | as per rule 48 |\n\n\\* \"F.A.R and Density may be adopted as provided in the Development Plans of respective towns.\"\n\n**Worked example:** plot of 200 sq m x FAR 1.25 = **250 sq m** of permissible built-up area (built-up area being computed as per the inclusions/exclusions in Rule 2(30)).\n\n## But other provisions point differently – the clerk must decide which applies\n\n1. **Rule 42, Table 4 (height above 12.5 m up to 30 m)** – FAR is fixed by road width, not by the 1.25 figure:\n\n| Road width | Min. plot/land area | Frontage | FAR | Building height | Front MOS | Side/rear MOS |\n|---|---|---|---|---|---|---|\n| 12.0 m and above | 1000 sq m | 18 m | 1:1.50 | up to 18 m | 7.5 m | 6.0 m |\n| 18 m and above | 1500 sq m | 21 m | 1:1.75 | up to 24 m | 9.0 m | 6.0 m |\n| 24 m and above | 2000 sq m | 30 m | 1:2.0 | up to 30 m | 12.00 m | 7.5 m |\n\n2. **Rule 42, Table 5 (high rise buildings)** – FAR from 1:2.25 (30 m road) up to 1:3.0 (60 m / 75 m roads).\n\n3. **Rule 60, Table 7 (Group Housing)** – FAR is tied to gross residential density: 125 persons/ha -> 0.75; 250 -> 1.25; 425 -> 1.50; 500 -> 1.75; 625 -> 2.00, \"unless otherwise provided in the development plan\".\n\n4. **Rule 61, Note (7)** – a **Premium FAR not exceeding 25% of the Base FAR** may be allowed over and above the table (rate to be decided by the State Government). On a base of 1.25 that is an extra 0.3125, i.e. up to 1.5625 in total.\n\n5. **Rule 61 footnote \\*** and **Rule 103** – the Development Plan of the town may prescribe a different FAR/density, and Rule 103 gives the development plan precedence (with the Director referring contrary cases to Government).\n\nSo: **1.25 is the base residential FAR under Rule 61**, but for buildings taller than 12.5 m the Rule 42 road-width tables apply, for group housing the Rule 60 density table applies, Premium FAR may add up to 25%, and the local Development Plan may override.",
+    "clerk_summary": "Residential FAR under Rule 61 Table 8 is 1.25 (e.g. 200 sq m plot = 250 sq m built-up). But buildings above 12.5 m follow Rule 42 road-width FAR (1.50-3.0), group housing follows Rule 60 density table, and up to 25% Premium FAR may be added. The town's Development Plan can override (Rule 103).",
+    "citations": [
+      {
+        "rule": "Rule 61",
+        "page": 83,
+        "quote": "61. Floor Area Ratio - The Floor Area Ratio (FAR) for different use group shall be as mentioned in Table 8 :-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61, Table 8",
+        "page": 83,
+        "quote": "1.            Resdential             1.25",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61, Table 8 footnote",
+        "page": 83,
+        "quote": "F.A.R and Density may be adopted as provided in the Development Plans of respective towns.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 42(1), Table 4",
+        "page": 58,
+        "quote": "1. 12.0 m. 1000 sq. 18 m.        1:1.50",
+        "verified": true
+      },
+      {
+        "rule": "Rule 42(2), Table 5",
+        "page": 59,
+        "quote": "1.   30 m.        2500     30 m.   1:2.25     30   Up to 45 15.00 m.                           7.5 m.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 60(2), Table 7",
+        "page": 82,
+        "quote": "2.                 250                       30                      1.25",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61, Note (7)",
+        "page": 84,
+        "quote": "In addition to the FAR as mentioned in above said table, additional FAR as Premium Floor Area Ratio may be provided over and above which shall not exceed 25% of the Base FAR.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 103",
+        "page": 107,
+        "quote": "Provided that if the norms and regulation as provided in the development plan are different or contrary to these rules, the Director shall examine and send his proposal to the Government.",
+        "verified": true
+      }
+    ],
+    "notes": "This text is consolidated only up to 6 March 2025; the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included, so verify separately if the plot is up to 500 sq m. The applicable FAR also depends on building height (Rule 42), on whether it is group housing (Rule 60), and on the town's Development Plan, which takes precedence under Rule 103 and the footnote to Rule 61 Table 8. The rate/availability of Premium FAR is to be decided by the State Government. This is not legal advice; it only points to the rule.",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
   }
 }
