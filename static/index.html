@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bhumi Vikas Sahayak</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bhumi Vikas Sahayak</h1>
+    <p>MP Bhumi Vikas Rules 2012 · consolidated to 6 Mar 2025 · The tool points to the rule; the clerk decides.</p>
+  </header>
+
+  <main id="chat" aria-live="polite">
+    <div class="msg bot">
+      Type the citizen's question in English or Hindi.<br>
+      Example: <i>My plot is 200 sq m on a 9 m road. How much front gap, how many floors, and what fee?</i>
+    </div>
+  </main>
+
+  <form id="form">
+    <label for="q" class="sr-only">Question</label>
+    <textarea id="q" rows="2" placeholder="Type the question… (Enter to send, Shift+Enter for new line)" required></textarea>
+    <button type="submit">Ask</button>
+  </form>
+
+  <script src="app.js"></script>
+</body>
+</html>
