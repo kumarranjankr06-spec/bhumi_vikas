@@ -193,6 +193,7 @@ async function ask(question) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question }),
     });
+    if (res.status === 401) return location.replace("/login.html"); // session ended (logout or server restart)
     const data = await res.json();
     if (!res.ok) throw new Error(data.detail || "Something went wrong");
     console.log("[ask] response:", data);
@@ -285,5 +286,10 @@ if (!SpeechRecognition) {
     recognition.start();
   });
 }
+
+document.getElementById("logout").onclick = async () => {
+  await fetch("/api/logout", { method: "POST" });
+  location.replace("/login.html");
+};
 
 loadPdf();

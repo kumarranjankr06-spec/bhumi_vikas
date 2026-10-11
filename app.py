@@ -1,14 +1,18 @@
 import difflib
+import hashlib
+import hmac
 import json
+import os
 import re
+import secrets
 import sys
 import threading
 from pathlib import Path
 from typing import Literal
 
 import anthropic
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -124,6 +128,57 @@ client = anthropic.Anthropic(default_headers={"Accept-Encoding": "gzip, deflate"
 cache_lock = threading.Lock()
 cache = json.loads(CACHE_FILE.read_text(encoding="utf-8")) if CACHE_FILE.exists() else {}
 app = FastAPI(title="Bhumi Vikas Sahayak")
+
+# Login: change on Render with LOGIN_USER / LOGIN_PASSWORD; SHOW_LOGIN_HINT=0 hides them on the login page.
+LOGIN_USER = os.environ.get("LOGIN_USER", "clerk")
+LOGIN_PASSWORD = os.environ.get("LOGIN_PASSWORD", "bmc@2026")
+# ponytail: random secret per start, so a server restart logs everyone out; set SESSION_SECRET to keep sessions.
+SESSION_SECRET = os.environ.get("SESSION_SECRET") or secrets.token_hex(32)
+SESSION = hmac.new(SESSION_SECRET.encode(), f"{LOGIN_USER}:{LOGIN_PASSWORD}".encode(), hashlib.sha256).hexdigest()
+PUBLIC_PATHS = {"/login.html", "/api/login", "/api/login-hint"}
+
+
+class Login(BaseModel):
+    username: str
+    password: str
+
+
+@app.middleware("http")
+async def require_login(request: Request, call_next):
+    logged_in = hmac.compare_digest(request.cookies.get("session", "").encode(), SESSION.encode())
+    path = request.url.path
+    if path == "/login.html" and logged_in:
+        return RedirectResponse("/")
+    if logged_in or path in PUBLIC_PATHS:
+        return await call_next(request)
+    if path.startswith("/api/"):
+        return JSONResponse({"detail": "Please log in again."}, status_code=401)
+    return RedirectResponse("/login.html")
+
+
+@app.post("/api/login")
+def login(body: Login):
+    user_ok = hmac.compare_digest(body.username.strip().encode(), LOGIN_USER.encode())
+    password_ok = hmac.compare_digest(body.password.encode(), LOGIN_PASSWORD.encode())
+    if not (user_ok and password_ok):
+        raise HTTPException(401, "Wrong username or password")
+    response = JSONResponse({"ok": True})
+    response.set_cookie("session", SESSION, httponly=True, samesite="lax")
+    return response
+
+
+@app.post("/api/logout")
+def logout():
+    response = JSONResponse({"ok": True})
+    response.delete_cookie("session")
+    return response
+
+
+@app.get("/api/login-hint")
+def login_hint():
+    if os.environ.get("SHOW_LOGIN_HINT", "1") == "0":
+        return {}
+    return {"username": LOGIN_USER, "password": LOGIN_PASSWORD}
 
 
 @app.post("/api/ask")
