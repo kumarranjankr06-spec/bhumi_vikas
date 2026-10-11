@@ -1,6 +1,7 @@
 import difflib
 import json
 import re
+import sys
 import threading
 from pathlib import Path
 from typing import Literal
@@ -16,6 +17,9 @@ DATA = ROOT / "data"
 PDF = DATA / "MP_Bhumi_Vikas_Rules_2012_upto_2025-03-06_EN.pdf"
 CACHE_FILE = ROOT / "cache.json"
 MODEL = "claude-opus-5"
+
+# Windows consoles default to cp1252; without this, print() of a Hindi question crashes the request.
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 FULLTEXT = (DATA / "bhumi_vikas_rules_fulltext_by_page.txt").read_text(encoding="utf-8")
 PAGES = {int(n): t for n, t in re.findall(r"===== PDF page (\d+) =====\n(.*?)(?======|\Z)", FULLTEXT, re.S)}
@@ -36,6 +40,9 @@ Rules:
   table row is enough).
 - Read table rows carefully; state the exact row (e.g. "road up to 9.0 m -> 3.0 m front open space").
 - Do arithmetic (fees, areas, FAR x plot area) step by step and show it.
+- "answer" is rendered as Markdown. If the retrieved context contains flattened tabular data (rows of a rule's
+  table run together as plain lines), you MUST format that table in "answer" as a proper Markdown table with a
+  header row, e.g. "| Road width | Front open space |". Use **bold** for the final figure the clerk needs.
 - Write "answer" and "clerk_summary" in the same language as the question (English or Hindi).
   "clerk_summary" is 1-3 short lines the clerk can read out at the counter.
 - Put caveats in "notes": e.g. this text is consolidated to 6 March 2025; the 28 August 2026 amendment to
@@ -80,6 +87,28 @@ def quote_on_page(quote, page):
     return bool(quote.strip()) and squash(quote) in nearby
 
 
+# Rule 2(5)(c) (plots up to 500 sq m) was amended on 28 Aug 2026, after this consolidated text.
+AMENDED_RULE = re.compile(r"2\s*\(\s*5\s*\)\s*\(\s*c\s*\)|500\s*(?:sq|वर्ग)", re.I)
+PLOT_AREA = re.compile(r"(\d+(?:\.\d+)?)\s*(?:sq|वर्ग)", re.I)
+
+
+def amendment_alert(question, result):
+    # Notes are left out: the prompt makes the model mention the amendment there as a routine caveat.
+    text = " ".join([question, result["answer"], result["clerk_summary"]]
+                    + [f"{c['rule']} {c['quote']}" for c in result["citations"]])
+    if AMENDED_RULE.search(text):
+        return True
+    # A plot of 500 sq m or less falls under the amended rule even if 2(5)(c) is never named.
+    return any(float(a) <= 500 for a in PLOT_AREA.findall(question))
+
+
+def with_extras(question, result, cached):
+    pages = list(dict.fromkeys(c["page"] for c in result["citations"]))
+    alert = amendment_alert(question, result)
+    print(f"[ask] status={result['status']} pdf_pages={pages} amendment_alert={alert} cached={cached}", flush=True)
+    return {**result, "pdf_pages": pages, "amendment_alert": alert, "cached": cached}
+
+
 def find_cached(q, cache):
     if q in cache:
         return cache[q]
@@ -100,12 +129,16 @@ app = FastAPI(title="Bhumi Vikas Sahayak")
 @app.post("/api/ask")
 def ask(body: Question):
     q = normalize(body.question)
+    print(f"[ask] question={body.question!r}", flush=True)
     if not q:
         raise HTTPException(400, "Empty question")
     with cache_lock:
         hit = find_cached(q, cache)
     if hit:
-        return {**hit, "cached": True}
+        print("[ask] cache hit", flush=True)
+        return with_extras(body.question, hit, True)
+
+    print(f"[ask] cache miss, calling {MODEL}", flush=True)
 
     try:
         response = client.beta.messages.parse(
@@ -135,10 +168,11 @@ def ask(body: Question):
     with cache_lock:
         cache[q] = result
         CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
-    return {**result, "cached": False}
+    return with_extras(body.question, result, False)
 
 
 @app.get("/pdf")
+@app.get("/static/rules.pdf")
 def pdf():
     return FileResponse(PDF, media_type="application/pdf")
 

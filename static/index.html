@@ -3,28 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bhumi Vikas Sahayak</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Bhumi Vikas Sahayak · Bhopal Municipal Corporation</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { gov: { 50: "#eef4fa", 100: "#d9e6f2", 600: "#2a6199", 700: "#1f4e79", 800: "#163b5e", 900: "#0e2a45" } },
+          fontFamily: { sans: ["Inter", "system-ui", "Noto Sans Devanagari", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+  <style type="text/tailwindcss">
+    /* Markdown answer body (tables rebuilt by the model, see SYSTEM prompt in app.py) */
+    .md p { @apply my-2; }
+    .md ul { @apply list-disc pl-5 my-2; }
+    .md ol { @apply list-decimal pl-5 my-2; }
+    .md strong { @apply font-semibold text-slate-900; }
+    .md h1, .md h2, .md h3 { @apply font-semibold text-slate-900 mt-3 mb-1; }
+    .md code { @apply bg-slate-100 rounded px-1 text-[13px]; }
+    .md table { @apply w-full my-3 text-sm border border-slate-300 border-collapse rounded-lg overflow-hidden; }
+    .md thead th { @apply bg-gov-700 text-white font-semibold text-left px-3 py-2 border border-gov-800; }
+    .md td { @apply px-3 py-2 border border-slate-200 align-top; }
+    .md tbody tr:nth-child(even) { @apply bg-slate-50; }
+    .md tbody tr:hover { @apply bg-gov-50; }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { scrollbar-width: none; }
+    @keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(234,179,8,.9); } 100% { box-shadow: 0 0 0 14px rgba(234,179,8,0); } }
+    .flash { animation: flash 1s ease-out 2; }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>Bhumi Vikas Sahayak</h1>
-    <p>MP Bhumi Vikas Rules 2012 · consolidated to 6 Mar 2025 · The tool points to the rule; the clerk decides.</p>
+
+<body class="h-screen flex flex-col bg-slate-100 font-sans text-slate-800 antialiased">
+  <!-- Header -->
+  <header class="bg-gov-900 text-white shadow-md">
+    <div class="flex items-center gap-4 px-5 py-3">
+      <div class="h-11 w-11 shrink-0 rounded-full bg-white text-gov-900 grid place-items-center font-bold text-sm ring-2 ring-amber-400">BMC</div>
+      <div class="min-w-0">
+        <h1 class="text-lg font-semibold leading-tight">Bhumi Vikas Sahayak <span class="font-normal text-gov-100">· भूमि विकास सहायक</span></h1>
+        <p class="text-xs text-gov-100 truncate">Bhopal Municipal Corporation · Building Permission Desk · The tool points to the rule; the clerk decides.</p>
+      </div>
+      <div class="ml-auto hidden md:flex items-center gap-2 text-xs">
+        <span class="rounded-full bg-white/10 px-3 py-1 ring-1 ring-white/20">MP Bhumi Vikas Rules 2012</span>
+        <span class="rounded-full bg-amber-400/20 text-amber-200 px-3 py-1 ring-1 ring-amber-300/40">Consolidated to 6 Mar 2025</span>
+      </div>
+    </div>
+    <div class="flex h-1"><div class="flex-1 bg-orange-500"></div><div class="flex-1 bg-white"></div><div class="flex-1 bg-green-600"></div></div>
   </header>
 
-  <main id="chat" aria-live="polite">
-    <div class="msg bot">
-      Type the citizen's question in English or Hindi.<br>
-      Example: <i>My plot is 200 sq m on a 9 m road. How much front gap, how many floors, and what fee?</i>
-    </div>
+  <main class="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 overflow-y-auto lg:overflow-hidden">
+    <!-- Left: chat -->
+    <section class="flex flex-col min-h-0 h-[85vh] lg:h-auto bg-white rounded-xl shadow-sm ring-1 ring-slate-200">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-slate-200">
+        <h2 class="font-semibold text-gov-800">Citizen Query Desk</h2>
+        <span class="text-xs text-slate-500">English · हिन्दी · Hinglish</span>
+      </div>
+
+      <div id="chat" class="flex-1 min-h-0 overflow-y-auto px-4 py-4 space-y-4 bg-slate-50/60" aria-live="polite">
+        <div class="max-w-[90%] rounded-xl bg-white ring-1 ring-slate-200 px-4 py-3 text-sm shadow-sm">
+          Type, speak or pick the citizen's question below.<br>
+          <span class="text-slate-500">Example: <i>My plot is 200 sq m on a 9 m road. How much front gap, how many floors, and what fee?</i></span>
+        </div>
+      </div>
+
+      <!-- Quick query chips -->
+      <div id="chips" class="no-scrollbar flex gap-2 overflow-x-auto px-4 pt-3 pb-1 border-t border-slate-200">
+        <button type="button" data-q="What is the FAR for residential?">📐 FAR for residential</button>
+        <button type="button" data-q="Setback for 200 sqm plot?">↔️ Setback for 200 sqm plot</button>
+        <button type="button" data-q="Parking rules for commercial?">🚗 Parking for commercial</button>
+        <button type="button" data-q="Fees for extra floor?">💰 Fees for extra floor</button>
+        <button type="button" data-q="Front open space for a residential plot on a 9 m road">🛣️ Front gap on 9 m road</button>
+        <button type="button" data-q="500 वर्ग मीटर तक के प्लॉट के लिए क्या नियम है?">🏠 500 वर्ग मी. प्लॉट नियम</button>
+      </div>
+
+      <form id="form" class="px-4 pb-4 pt-2">
+        <div id="listening" class="hidden mb-2 flex items-center gap-2 text-sm font-medium text-red-600">
+          <span class="relative flex h-3 w-3">
+            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+            <span class="relative inline-flex h-3 w-3 rounded-full bg-red-600"></span>
+          </span>
+          Listening… सुन रहा हूँ — speak in Hindi or Hinglish
+        </div>
+        <div class="flex items-end gap-2">
+          <label for="q" class="sr-only">Question</label>
+          <textarea id="q" rows="2" required
+            class="flex-1 resize-none rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-gov-600 focus:outline-none focus:ring-2 focus:ring-gov-100"
+            placeholder="Type the question… (Enter to send, Shift+Enter for new line)"></textarea>
+          <button id="mic" type="button" title="Speak in Hindi"
+            class="h-11 shrink-0 rounded-lg border-2 border-red-500 px-3 text-sm font-semibold text-red-600 hover:bg-red-50 disabled:opacity-40 disabled:cursor-not-allowed">
+            🎤 Speak (Hindi)
+          </button>
+          <button id="send" type="submit"
+            class="h-11 shrink-0 rounded-lg bg-gov-700 px-5 text-sm font-semibold text-white hover:bg-gov-800 disabled:opacity-50 disabled:cursor-wait">
+            Ask
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Right: PDF viewer -->
+    <section class="flex flex-col min-h-0 h-[85vh] lg:h-auto bg-white rounded-xl shadow-sm ring-1 ring-slate-200">
+      <div class="flex flex-wrap items-center gap-2 px-4 py-2.5 border-b border-slate-200">
+        <h2 class="font-semibold text-gov-800 mr-auto">Rulebook <span class="text-xs font-normal text-slate-500">(official PDF)</span></h2>
+        <div class="flex items-center gap-1 text-sm">
+          <button id="prev" class="pdf-btn" title="Previous page">‹</button>
+          <input id="pageInput" type="number" min="1" value="1" aria-label="Page number"
+            class="w-14 rounded-md border border-slate-300 px-1 py-1 text-center text-sm">
+          <span class="text-slate-500">/ <span id="pageCount">–</span></span>
+          <button id="next" class="pdf-btn" title="Next page">›</button>
+          <span class="mx-1 h-5 w-px bg-slate-200"></span>
+          <button id="zoomOut" class="pdf-btn" title="Zoom out">−</button>
+          <button id="zoomIn" class="pdf-btn" title="Zoom in">+</button>
+          <a id="openTab" href="/static/rules.pdf" target="_blank" class="pdf-btn" title="Open in new tab">↗</a>
+        </div>
+      </div>
+      <div id="citedPages" class="hidden flex flex-wrap items-center gap-1.5 px-4 py-2 border-b border-slate-200 bg-gov-50 text-xs"></div>
+      <div id="pdfWrap" class="relative flex-1 min-h-0 overflow-auto bg-slate-200 p-4">
+        <div id="pdfStatus" class="text-center text-sm text-slate-500 py-10">Loading rulebook…</div>
+        <canvas id="pdfCanvas" class="mx-auto block bg-white shadow-lg rounded-sm"></canvas>
+      </div>
+    </section>
   </main>
 
-  <form id="form">
-    <label for="q" class="sr-only">Question</label>
-    <textarea id="q" rows="2" placeholder="Type the question… (Enter to send, Shift+Enter for new line)" required></textarea>
-    <button type="submit">Ask</button>
-  </form>
-
+  <style type="text/tailwindcss">
+    #chips button { @apply shrink-0 whitespace-nowrap rounded-full border border-gov-100 bg-gov-50 px-3 py-1.5 text-xs font-medium text-gov-800 hover:bg-gov-100 hover:border-gov-600 disabled:opacity-50 disabled:cursor-wait transition; }
+    .pdf-btn { @apply grid h-8 min-w-8 place-items-center rounded-md border border-slate-300 px-2 text-slate-700 hover:bg-slate-100; }
+  </style>
   <script src="app.js"></script>
 </body>
 </html>

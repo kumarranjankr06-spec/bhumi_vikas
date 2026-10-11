@@ -415,5 +415,161 @@
     ],
     "notes": "This text is consolidated only up to 6 March 2025; the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included and may affect a 200 sq m plot - please verify the current position before issuing. Rule 103 and the footnote to Rule 61 Table 8 mean the local Development Plan (FAR, density, set-backs, height) can override these figures for Bhopal; check the Bhopal Development Plan. The floor-count example assumes a 10 m x 20 m semi-detached plot - the actual footprint depends on your frontage and building type (Rule 53(1)(i)); the rules themselves fix FAR, open spaces and height, not a number of floors. Fee figures assume 250 sq m built-up area as defined in Rule 2(30) (exclusions such as parking, staircase, balcony up to 1.20 m etc. apply, subject to the 25% cap for individual residential use). Development/other charges of the local body are extra. This is not legal advice; it only points to the rule.",
     "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "म र प ल ट 200 स क व यर म टर क ह और उसक आग र ड 9 एम ह त म झ बत ओ क क तन ग प छ ड न ह और उसक ल ए क तन फ स लग ग": {
+    "status": "found",
+    "answer": "## 1. कितना गैप (खुली जगह / MOS) छोड़ना है\n\nआपका प्लॉट **200 वर्गमीटर** है और सामने की सड़क **9.0 मीटर** चौड़ी है। ऊँचाई 12.5 मीटर तक मानते हुए नियम 56 लागू होगा:\n\n### (क) सामने की खुली जगह (Front MOS) — नियम 56(1)\n\n| सड़क की चौड़ाई | न्यूनतम सामने की खुली जगह |\n|---|---|\n| 9.0 मीटर तक | **3.0 मीटर** |\n| 9.0 से 12 मीटर तक | 3.6 मीटर |\n| 12 से 18 मीटर तक | 4.5 मीटर |\n| 18 मीटर से ऊपर | 6.0 मीटर |\n\nआपकी पंक्ति: **सड़क 9.0 मीटर तक → सामने 3.0 मीटर**\n\n### (ख) पीछे की खुली जगह (Rear MOS) — नियम 56(2)\n\n| प्लॉट क्षेत्रफल (वर्गमीटर) | न्यूनतम पीछे की खुली जगह |\n|---|---|\n| 40.00 तक | शून्य |\n| 40.00 से ऊपर – 150.00 तक | 1.50 मीटर |\n| 150 से ऊपर – 225.00 तक | **2.50 मीटर** |\n| 225.00 से ऊपर | 3.00 मीटर |\n\nआपकी पंक्ति: **200 वर्गमीटर (150–225 के बीच) → पीछे 2.50 मीटर**\n\n### (ग) साइड की खुली जगह — नियम 53(1) + नियम 56(3)\n200 वर्गमीटर प्लॉट नियम 53(1) के अनुसार **semi-detached (125–225 वर्गमीटर)** या **row type (50–225 वर्गमीटर)** श्रेणी में आता है — यह आपके निर्माण के प्रकार पर निर्भर है:\n\n| निर्माण का प्रकार | साइड खुली जगह |\n|---|---|\n| Semi-detached | एक तरफ **3.0 मीटर**; (ऊँचाई 10 मी. तक + फ्रंटेज 10 मी. तक हो तो **2.5 मीटर** तक घटाई जा सकती है) |\n| Row type | कोई साइड खुली जगह आवश्यक नहीं |\n| Detached (225 वर्गमीटर से ऊपर के प्लॉट पर) | दोनों तरफ 3.0 मीटर |\n\n**संक्षेप: आगे 3.0 मी., पीछे 2.50 मी., साइड (semi-detached होने पर) 3.0 मी. (शर्त पूरी होने पर 2.5 मी.), row type में साइड शून्य।**\n\n---\n\n## 2. फीस की गणना\n\nफीस दो हिस्सों में लगती है (नियम 21):\n\n**(क) आवेदन फीस** = प्रस्तावित निर्मित क्षेत्र (built‑up area) का **₹1.00 प्रति वर्गमीटर**।\n\n**(ख) अनुमति फीस (Permission Fee)** — केवल आवासीय भवन के लिए स्लैब:\n\n| निर्मित क्षेत्र (वर्गमीटर) | फीस |\n|---|---|\n| 126 – 200 | ₹2,000 |\n| 201 – 300 | ₹3,000 |\n| 301 – 400 | ₹4,000 |\n\n### उदाहरण गणना (आवासीय, FAR 1.25 — नियम 61)\n- अधिकतम अनुमेय निर्मित क्षेत्र = 200 वर्गमीटर × 1.25 = **250 वर्गमीटर**\n- आवेदन फीस = 250 × ₹1 = **₹250**\n- अनुमति फीस (250 वर्गमीटर → 201–300 स्लैब) = **₹3,000**\n- **कुल = ₹250 + ₹3,000 = ₹3,250**\n\nयदि आप कम निर्माण करते हैं, मान लीजिए 180 वर्गमीटर:\n- आवेदन फीस = 180 × ₹1 = ₹180\n- अनुमति फीस (126–200 स्लैब) = ₹2,000\n- **कुल = ₹2,180**\n\n*(दुकान/व्यावसायिक या shop‑cum‑residence हो तो उपरोक्त फीस पर 50% अतिरिक्त लगेगा। इसके अलावा सक्षम प्राधिकारी द्वारा लागू विकास शुल्क अलग से देय होगा — नियम 12A(7).)*\n\n---\n\n## 3. दो और बातें जो इस प्लॉट पर लागू होंगी\n- **वर्षा जल संचयन** अनिवार्य है (140 वर्गमीटर से बड़े प्लॉट पर) — नियम 81(4)।\n- **वृक्षारोपण**: प्रति 100 वर्गमीटर एक पेड़ → आपके 200 वर्गमीटर पर **2 पेड़** — नियम 67।\n- 200 वर्गमीटर प्लॉट पर एक नौकर कक्ष (25 वर्गमीटर तक) तथा ढका हुआ पार्किंग FAR में नहीं गिना जाता — नियम 61 के नोट (3) व (4)।",
+    "clerk_summary": "200 वर्गमीटर प्लॉट, 9 मी. सड़क: आगे 3.0 मी., पीछे 2.50 मी., साइड (semi-detached) 3.0 मी. (शर्त पर 2.5 मी.), row type में साइड शून्य।\nफीस: आवेदन ₹1/वर्गमीटर निर्मित क्षेत्र + अनुमति फीस स्लैब से (250 वर्गमीटर निर्माण पर ₹250 + ₹3,000 = ₹3,250)।\nवर्षा जल संचयन व 2 पेड़ भी अनिवार्य।",
+    "citations": [
+      {
+        "rule": "Rule 56(1)(a)",
+        "page": 77,
+        "quote": "Every Residential Building having height up to 12.5 meters, facing street shall have a front open space mentioned below and such open space shall form an integral part of the site :-",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(1)(a) Table",
+        "page": 77,
+        "quote": "Up to 9.0 meters                                            3.0 meters",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(2)(a) Table",
+        "page": 78,
+        "quote": "Above 150 and up to 225.00                              2.50",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(3)(ii)",
+        "page": 78,
+        "quote": "For semi-detached building there shall be a minimum side open space of 3.0 meters on one side. For Semi-detached building up to 10 meters in height on plots with a frontage up to 10 meters, the side open space may be reduced to 2.5 meters.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 56(3)(iii)",
+        "page": 78,
+        "quote": "For row-type buildings, no side open space is required.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 53(1)(i) Table",
+        "page": 70,
+        "quote": "Semi-detached building                         125-225                     8 to 12",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(2)(ii)",
+        "page": 35,
+        "quote": "for the Building Permission Rs 1.00 per Square meter of the proposed built-up area.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Table, Item 1",
+        "page": 36,
+        "quote": "A building intended to be used                     0          75         750",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Table, row 201-300",
+        "page": 36,
+        "quote": "201         300       3,000",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Table, row 126-200",
+        "page": 36,
+        "quote": "126         200       2,000",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61, Table 8",
+        "page": 83,
+        "quote": "1.            Resdential             1.25",
+        "verified": true
+      },
+      {
+        "rule": "Rule 81(4)",
+        "page": 94,
+        "quote": "Rain/Roof water harvesting method shall have to be provided on all type of buildings having plot size more than 140 Square meter as per the options mentioned in APPENDIX- H-1, H-2 and H-3.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 67",
+        "page": 87,
+        "quote": "A plot having area of 100 square meters or more shall be planted with trees after the completion of construction of building. The number of trees planted shall be one tree for every 100 square meters of individual plot.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 61, Note (4)",
+        "page": 84,
+        "quote": "Covered parking with a clear height of 2.4 meters may be provided within the permissible ground coverage on plots measuring 1[200 sq.m.] or more.",
+        "verified": true
+      }
+    ],
+    "notes": "(1) यह पाठ 6 मार्च 2025 तक संकलित है; नियम 2(5)(c) में 28 अगस्त 2026 का संशोधन (500 वर्गमीटर तक के प्लॉट) इसमें शामिल नहीं है — चूँकि आपका प्रश्न 500 वर्गमीटर से छोटे प्लॉट से जुड़ा है, काउंटर पर इसकी पुष्टि कर लें। (2) नियम 61 के फुटनोट के अनुसार FAR व घनत्व संबंधित नगर की विकास योजना के अनुसार लिए जा सकते हैं, और नियम 103 के अनुसार विकास योजना के मानदंड इन नियमों पर प्रभावी होते हैं — इसलिए भोपाल की विकास योजना की जाँच आवश्यक है। (3) फीस की सटीक राशि वास्तविक प्रस्तावित निर्मित क्षेत्र पर निर्भर है; ऊपर की गणना उदाहरण मात्र है। (4) नियम 12A का तत्काल/डीम्ड अनुमोदन केवल 186 वर्गमीटर तक के आवासीय प्लॉट पर है, अतः 200 वर्गमीटर पर लागू नहीं। (5) यह विधिक सलाह नहीं है; यह केवल संबंधित नियम बताता है।",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
+  },
+  "fees for extra floor": {
+    "status": "found",
+    "answer": "## Fee for adding an extra floor (addition/alteration that increases built-up area)\n\nAdding a floor is an \"alteration\" (Rule 2(3)) and needs fresh building permission under Rule 12(1). Two fees are payable:\n\n**1. Application fee — Rule 21(2)(ii)**\n> Rs. 1.00 per square metre of the proposed built-up area.\n\n**2. Permission fee — Rule 21(3)(b), Item 1 (purely residential building), slab table:**\n\n| Built-up area from (sq.m.) | to (sq.m.) | Fee (Rs.) |\n|---|---|---|\n| 0 | 75 | 750 |\n| 76 | 125 | 1,250 |\n| 126 | 200 | 2,000 |\n| 201 | 300 | 3,000 |\n| 301 | 400 | 4,000 |\n| 401 | 600 | 6,000 |\n| 601 | 750 | 7,500 |\n| 751 | 1,000 | 10,000 |\n| 1,001 | 1,250 | 12,500 |\n| 1,251 | 1,500 | 15,000 |\n| 1,501 | 2,000 | 20,000 |\n| 2,001 | 2,500 | 25,000 |\n| above 2,500 | — | 50,000 |\n\n- Shops / store house / factory / trade / other commercial or industrial (Item 2) and shop-cum-residence (Item 4): **fee of Item 1 + an additional 50%**.\n- If the building is a **high rise** (more than 10 storeys or more than 30 m — Rule 2(38)), Rule 21(3)(c) Item 1 applies instead: **Rs. 10.00 per sq.m. of built-up area** (commercial +100%, shop-cum-residence +50%).\n\n**Worked example (residential, extra floor of 150 sq.m.):**\n1. Application fee = 150 sq.m. × Rs. 1.00 = **Rs. 150**\n2. Permission fee, if reckoned on the 150 sq.m. of new built-up area → slab 126–200 → **Rs. 2,000**\n3. Total = Rs. 150 + Rs. 2,000 = **Rs. 2,150**\n\n*(If your office reckons the slab on the total built-up area of the whole building after addition — e.g. 150 existing + 150 new = 300 sq.m. → slab 201–300 → Rs. 3,000 — the figure changes; the rule states the slab against \"built up area\" without expressly saying new-only or total. Decide as per your office practice.)*\n\n### Two special lower-fee entries (they do NOT cover a new floor)\n- **Item 7 – Rs. 500**: only for external addition/alteration **which does not add to the built-up area** (courtyard, compound wall, elevation change, roofing change, openings).\n- **Item 8 – Rs. 500**: addition/alteration **in the proposed (not yet executed) plan up to 10%**; above 10% a **fresh application** under the rules is necessary.\n\n### Other points for an upper floor\n- **No fresh Nazul NOC** is needed for upper floors if the ground floor was already approved (Rule 16(11)(c), second proviso).\n- The extra floor must stay within permissible FAR (Rule 61, Table 8 — residential 1.25), ground coverage, height and MOS norms (Rules 42, 56).\n- If the floor was already built without/beyond permission, Rule 24 applies: deviation exceeding **30% of permissible FAR** is not permissible, and the local body may charge a **compounding fee** under its own Act/rules (Rule 24(3)) — that compounding fee is not fixed by these rules.",
+    "clerk_summary": "Ek aur manzil jodna = building permission ki alteration. Application fee Rs. 1 per sq.m. of new built-up area (Rule 21(2)) + permission fee from the slab table of Rule 21(3)(b) — e.g. 150 sq.m. floor = Rs. 150 + Rs. 2,000 = Rs. 2,150. Commercial/shop-cum-residence: +50%. High rise: Rs. 10 per sq.m. Rs. 500 wala entry only for work that does NOT add built-up area.",
+    "citations": [
+      {
+        "rule": "Rule 21(2)(ii)",
+        "page": 35,
+        "quote": "for the Building Permission Rs 1.00 per Square meter of the proposed built-up area.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Item 1",
+        "page": 36,
+        "quote": "A building intended to be used                              0          75         750\n           exclusively as residence                           76         125       1,250\n                                                             126         200       2,000",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Item 2",
+        "page": 36,
+        "quote": "A building intended to be used as shops,      Fees as prescribed in item No. 1\n           store house, factory or carrying on trade     together with additional charge of\n           or business or any other commercial or        50% of such amount of fees.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Item 7",
+        "page": 36,
+        "quote": "external addition or alteration which\n           does not add to the built up area such as\n           courtyard, compound wall, alteration in\n           elevation or roofing such as tiles to A.C.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(b) Item 8",
+        "page": 37,
+        "quote": "In case of addition or alteration in the Up to 10%               Rs. 500.00",
+        "verified": true
+      },
+      {
+        "rule": "Rule 21(3)(c) Item 1",
+        "page": 37,
+        "quote": "A building intended to be used            Rs. 10.00 per square meter of the\n               exclusively for residence.                built up area.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 16(11)(c) (second proviso)",
+        "page": 33,
+        "quote": "In no case shall a No Objection Certificate from the concerned Nazul Authority for construction of the upper floors be required if the ground floor has already been approved earlier by the Authority;",
+        "verified": true
+      },
+      {
+        "rule": "Rule 24(3)",
+        "page": 42,
+        "quote": "Where a deviation from the sanctioned plan takes place in the construction of the building, local authority may charge such compounding fee, as may be prescribed in the respective Act governing the functioning of such local authority or the rules made there under.",
+        "verified": true
+      },
+      {
+        "rule": "Rule 24(1)(b)",
+        "page": 41,
+        "quote": "No deviation from the sanctioned plan shall be permissible if the construction involved in such deviation,-",
+        "verified": true
+      }
+    ],
+    "notes": "The question \"fees for extra floor\" was read as the fee for a building permission for an addition/alteration adding a floor; if you actually meant a compounding/regularisation charge for an already-built floor, that amount is fixed by the Municipal Corporation Act/Compounding Rules, not by these rules. This text is consolidated up to 6 March 2025; the 28 August 2026 amendment to Rule 2(5)(c) (plots up to 500 sq m) is NOT included — flag it if the plot is up to 500 sq m. FAR and other norms of the local Development Plan can override these rules (Rule 103; FAR footnote under Rule 61 Table 8: \"F.A.R and Density may be adopted as provided in the Development Plans of respective towns\"). This is not legal advice; it only points to the rule.",
+    "version": "MP Bhumi Vikas Rules 2012, consolidated to 6 Mar 2025"
   }
 }
